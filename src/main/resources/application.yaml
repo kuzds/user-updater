@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: user-updater
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test_db
+    username: test
+    password: test
+    driver-class-name : org.postgresql.Driver
+
+ext-service:
+  url: http://external.service
+  path:
+    get-user: /api/v1/user/
